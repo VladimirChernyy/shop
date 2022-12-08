@@ -1,54 +1,54 @@
 {% extends 'main/base.html' %}
 
 {% block title %}
-{{ title }}
+Каталог
 {% endblock %}
 
 {% block body %}
 
-   <div class="row row-cols- row-cols-md-3 mb-3 text-center">
-      <div class="col">
+<div class="row row-cols- row-cols-md-3 mb-3 text-center">
+    <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Ручные плиткорезы</h4>
-          </div>
-          <div class="card-body">
-            <img src="https://back.diamtools.ru/upload/iblock/37b/37b866f003a05415d39662d1318d344a.jpg"
-                 height="300"
-                 width="300"
-                 alt="Ручной плиткорез сигма">
-            <a href="{% url 'manual_tile_сutter' %}" type="button" class="w-100 btn btn-lg btn-outline-primary">Перейти</a>
-          </div>
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Ручные плиткорезы</h4>
+            </div>
+            <div class="card-body">
+                <img src="https://back.diamtools.ru/upload/iblock/37b/37b866f003a05415d39662d1318d344a.jpg"
+                     height="300"
+                     width="300"
+                     alt="Ручной плиткорез сигма">
+                <a href="{% url 'manual_tile_сutter' %}" type="button" class="w-100 btn btn-lg btn-outline-primary">Перейти</a>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Электрические плиткорезы</h4>
-          </div>
-          <div class="card-body">
-             <img src="https://cdn.shopify.com/s/files/1/0342/2840/4269/products/Wandeli-qx-1200_500x.jpg?v=1605133119"
-                 height="300"
-                 width="300"
-                 alt="Электрический плиткорез Wandeli">
-            <a href="{% url 'electric_tile_cutter' %}" type="button" class="w-100 btn btn-lg btn-outline-primary">Перейти</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Плиткорезы для XL формата</h4>
-          </div>
-          <div class="card-body">
-            <img src="https://www.mactool.co.za/wp-content/uploads/2020/04/Sigma-Kera-Cut-Cover.jpg"
-                 height="300"
-                 width="300"
-                 alt="Ручной плиткорез сигма XL формата">
-              <a href="{% url 'XL_size' %}" type="button" class="w-100 btn btn-lg btn-outline-primary">Перейти</a>>
-          </div>
-        </div>
-      </div>
     </div>
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Электрические плиткорезы</h4>
+            </div>
+            <div class="card-body">
+                <img src="https://cdn.shopify.com/s/files/1/0342/2840/4269/products/Wandeli-qx-1200_500x.jpg?v=1605133119"
+                     height="300"
+                     width="300"
+                     alt="Электрический плиткорез Wandeli">
+                <a href="{% url 'electric_tile_cutter' %}" type="button" class="w-100 btn btn-lg btn-outline-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Плиткорезы для XL формата</h4>
+            </div>
+            <div class="card-body">
+                <img src="https://www.mactool.co.za/wp-content/uploads/2020/04/Sigma-Kera-Cut-Cover.jpg"
+                     height="300"
+                     width="300"
+                     alt="Ручной плиткорез сигма XL формата">
+                <a href="{% url 'XL_size' %}" type="button" class="w-100 btn btn-lg btn-outline-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
