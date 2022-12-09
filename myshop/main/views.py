@@ -15,8 +15,8 @@ def catalog(request):
     return render(request, 'main/catalog.html')
 
 
-def about(request):
-    return render(request, 'main/about.html')
+def grocery_basket(request):
+    return render(request, 'main/grocery_basket.html')
 
 
 def create(request):
